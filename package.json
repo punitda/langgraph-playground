@@ -1,0 +1,29 @@
+{
+  "name": "js-research-assistant",
+  "version": "1.0.0",
+  "description": "Research Assistant implemented in TypeScript",
+  "main": "dist/service/service.js",
+  "scripts": {
+    "start": "node dist/service/service.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/service/service.ts"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.7",
+    "@langchain/core": "^0.3.13",
+    "@langchain/groq": "^0.1.2",
+    "@langchain/langgraph": "^0.2.16",
+    "@langchain/openai": "^0.3.11",
+    "dotenv": "^16.4.1",
+    "duck-duck-scrape": "^2.2.5",
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.16",
+    "@types/uuid": "^9.0.8",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
